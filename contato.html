@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Entre em contato</title>
+
+    <style>
+        html{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            color:white;
+            background-image: url(pexels-markusspiske-225250.jpg);
+            background-size: cover;
+        }
+
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin:0;
+
+        }
+
+        form{
+            width: 80%;
+            background-color: darkgreen;
+            padding: 2px;
+        }
+
+        fieldset{
+            border: none;
+            padding:0;
+            margin:0;
+
+        }
+
+        label{
+            display:block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        input{
+            display:block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        textarea{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        input, textarea{
+            border: 3px solid transparent;
+            padding: 0.75em;
+            margin: 0.5em 0 2.5em;
+        }
+
+        legend{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Formulário para contato</legend>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" rows="6" required maxlength="500" required placeholder="Digite uma mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+            
+        
+
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
